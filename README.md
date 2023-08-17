@@ -1,3 +1,20 @@
+#My notes
+
+How To Make Better
+
+. Change to a Material UI Hamburger Navbar?
+- I need something very professional in terms of UI/UX
+
+
+What I don't like.
+
+. Right now the Hamburger menu triple bar symbol floats over the page and 
+that looks ugly.
+
+. I want the hamburger menu to exit out when you click on the page itself,
+not the cross 'x' bar.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

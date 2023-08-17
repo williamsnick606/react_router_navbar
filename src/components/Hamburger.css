@@ -44,6 +44,9 @@
 .menu__btn>span::before {
 	content: '';
 	top: -8px;
+
+	opacity: 1;
+	background-color: red;
 }
 
 .menu__btn>span::after {
