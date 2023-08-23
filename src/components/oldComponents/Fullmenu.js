@@ -5,10 +5,10 @@ const Fullmenu = () => {
 	return(
 		<div>
 			<div className="toolBarContainer">
-				<Link to="/">Home</Link>
-				<Link to="/about">About</Link>
-				<Link to="/posts">Posts</Link>
-				<Link to="/contact">Contact</Link>
+				<Link to="/Home">Home</Link>
+				<Link to="/About">About</Link>
+				<Link to="/Posts">Posts</Link>
+				<Link to="/Contact">Contact</Link>
 			</div>
 		</div>
 	); 

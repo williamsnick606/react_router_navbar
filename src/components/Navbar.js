@@ -13,7 +13,12 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 
-const pages = ['Products', 'Pricing', 'Blog'];
+import { Link} from 'react-router-dom';
+import "./Navbar.css"
+
+const oldPages = ['Products', 'Pricing', 'Blog'];
+const pages = ['Home','About', 'Posts', 'Contact']
+
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function Navbar() {
@@ -88,9 +93,11 @@ function Navbar() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
+				<Link to={page}>
+					<MenuItem key={page} onClick={handleCloseNavMenu}>
+					<Typography textAlign="center">{page}</Typography>
+				</MenuItem>
+				</Link>
               ))}
             </Menu>
           </Box>
@@ -115,13 +122,15 @@ function Navbar() {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                {page}
-              </Button>
+              <Link to={page}>
+				<Button
+					key={page}
+					onClick={handleCloseNavMenu}
+					sx={{ my: 2, color: 'white', display: 'block' }}
+				>
+					{page}
+				</Button>
+			  </Link>
             ))}
           </Box>
 
